@@ -1,0 +1,57 @@
+
+
+.animate-right{
+    position:relative;
+    animation:animateright 2s
+}
+@keyframes animateright{
+    from{
+        right:-1500px;
+        opacity:0
+    }
+    to{
+        right:0;
+        opacity:1
+    }
+}
+.animate-left-out{
+    position:relative;
+    animation:animateleftout 1s
+}
+@keyframes animateleftout{
+    from{
+        left:0px;
+        opacity:1
+    }
+     to
+     {
+         left:-1500px;
+         opacity:0
+        }
+    }
+.animate-left{
+    position:relative;
+    animation:animateleft 2s
+}@keyframes animateleft{
+    from{
+        left:-1500px;
+        opacity:0
+    }
+        to{
+            left:0px;
+            opacity:1
+        }
+    }
+.animate-right-out{
+    position:relative;
+    animation:animaterightout 1s
+}@keyframes animaterightout{
+    from{
+        right:0px;
+        opacity:1
+    }
+    to{
+        right:-1500px;
+        opacity:0
+    }
+}

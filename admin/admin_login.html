@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+    <form>
+        user name: <input type="text" name="uname" id="uname" placeholder="user name"></br></br>
+        password: <input type="password" name="password" id="password" placeholder="password"></br></br>
+        <button type="button" id="admin_log">login</button> 
+    </form>
+    <script>
+            $(document).ready(function() {
+                $("#admin_log").click(function() {
+                    var user=document.getElementById("uname").value;
+                    var password=document.getElementById("password").value;
+                    if(user=="titas2003" && password=="2003") {
+                        window.location.href="admin_profile.php";
+                    }
+                    else {
+                        alert(user);
+                    }
+                });
+            });
+        </script>
+</body>
+</html>
